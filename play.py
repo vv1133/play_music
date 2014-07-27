@@ -12,7 +12,7 @@ def onsignal_term(a,b):
 	global proc
 	print 'finish'
 	subprocess.Popen.kill(proc)
-	os.exit(0)
+	exit()
 
 signal.signal(signal.SIGTERM, onsignal_term)
 
